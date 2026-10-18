@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Bootstrap</title>
+    <link rel="stylesheet" href="/Minggu5/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Minggu5/bootstrap-5.3.8-dist/css/bootstrap-grid.css">
+</head>
+
+<style>
+    body {
+        padding-top: 90px;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-warning fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">meyla gemash</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="#">Project</a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="#">Skill</a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="#">Experience</a>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Sertifikat
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">UI/UX Masterclass</a></li>
+                    <li><a class="dropdown-item" href="#">Belajar AI Sederhana</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Seminar</a></li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- my adalah membuat margin -->
+    <<div class="container my-4">
+        <h1>Tentang Saya</h1>
+        <div class="row align-items-center my-3">
+      
+            <div class="col-auto pe-2">
+                <img src="/images/komputer1.jpg" class="img-fluid img-thumbnail" alt="Foto Komputer" style="max-width: 130px;">
+            </div>
+
+            
+            <div class="col ps-1">
+                <p class="mb-0">
+                    Selamat datang di website pribadi saya. Website ini dibuat
+                    untuk memperkenalkan profil, pendidikan, pengalaman, dan
+                    kegiatan yang saya lakukan. Melalui website ini, pengunjung
+                    dapat mengenal saya lebih dekat.
+                </p>
+            </div>
+
+        </div>
+
+
+        <p>
+            Nama saya Setyo Budi. Saya memiliki minat dalam bidang
+            teknologi informasi, khususnya pemrograman web, sistem
+            informasi, dan pengembangan basis data. Saya senang mempelajari
+            teknologi baru dan berbagi pengetahuan dengan orang lain.
+        </p>
+
+        <h3>Tentang Pendidikan</h3>
+
+        <p>
+            Pendidikan merupakan bagian penting dalam meningkatkan
+            pengetahuan dan keterampilan. Melalui pendidikan, seseorang
+            dapat mengembangkan kemampuan berpikir, kreativitas, serta
+            menyelesaikan berbagai permasalahan.
+        </p>
+
+        <p>
+            Saya terus berusaha mengembangkan kemampuan melalui kegiatan
+            belajar, membaca referensi, melakukan praktik pemrograman,
+            dan mengikuti perkembangan teknologi informasi.
+        </p>
+
+        <h3>Hobi dan Minat</h3>
+
+        <p>
+            Salah satu minat saya adalah mempelajari pemrograman web.
+            Dalam pengembangan website, HTML digunakan untuk menyusun
+            struktur halaman, CSS untuk mengatur tampilan, dan Bootstrap
+            untuk membantu membuat desain yang responsif.
+        </p>
+
+        <p>
+            Selain itu, saya tertarik pada pengembangan aplikasi yang
+            mudah digunakan, memiliki tampilan menarik, dan dapat diakses
+            melalui berbagai perangkat, seperti komputer, tablet, dan
+            telepon seluler.
+        </p>
+
+          <p>
+            Selain itu, saya tertarik pada pengembangan aplikasi yang
+            mudah digunakan, memiliki tampilan menarik, dan dapat diakses
+            melalui berbagai perangkat, seperti komputer, tablet, dan
+            telepon seluler.
+        </p>
+ 
+       <h3>Penghargaan</h3>
+
+        <p>
+            Berikut penghargaan yang saya peroleh.
+        </p>
+
+        <table class="table">
+        <thead>
+            <tr>
+            <th scope="col">No</th>
+            <th scope="col">Nama Kegiatan </th>
+            <th scope="col">Peran</th>
+            <th scope="col">Tahun</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>2024</td>
+            <td>@mdo</td>
+            
+            </tr>
+            <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>2025</td>
+            <td>@fat</td>
+            
+            </tr>
+            <tr>
+            <th scope="row">3</th>
+            <td>John</td>
+            <td>Doe</td>
+            <td>2025</td>
+            </tr>
+        </tbody>
+    </table>
+
+ 
+        <h3>Sertifikat</h3>
+        <div class="d-flex flex-row mb-3">
+            <div class="p-2"><img src="/images/1600w-5KeCXalDN2I.jpg" width="200px" height="200px"></div>
+            <div class="p-2"><img src="/images/1600w-5KeCXalDN2I.jpg" width="200px" height="200px"></div>
+             <div class="p-2"><img src="/images/1600w-5KeCXalDN2I.jpg" width="200px" height="200px"></div>
+              <div class="p-2"><img src="/images/1600w-5KeCXalDN2I.jpg" width="200px" height="200px"></div>
+        </div>
+ 
+
+  
+        <h3>Form Saran</h3>   
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+                <label for="inputPassword6" class="col-form-label">Password</label>
+            </div>
+            <div class="col-auto">
+                <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+            </div>
+            <div class="col-auto">
+                <span id="passwordHelpInline" class="form-text">
+                Must be 8-20 characters long.
+                </span>
+            </div>
+        </div>
+   
+
+        <h3>Penutup</h3>
+        <p>
+            Demikian perkenalan singkat tentang diri saya. Semoga website
+            ini dapat memberikan informasi yang bermanfaat bagi pengunjung.
+            Terima kasih telah mengunjungi website saya.
+        </p>
+    </div>
+     </div>
+
+</body>
+    <script src="/Minggu5/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
