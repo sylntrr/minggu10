@@ -1,0 +1,421 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+ 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+html {
+  scroll-behavior: smooth;
+}
+ 
+body {
+  font-family: "Inter", Arial, sans-serif;
+  color: #111;
+  background: #fff;
+  line-height: 1.6;
+}
+ 
+img {
+  display: block;
+  max-width: 100%;
+}
+ 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ 
+ul {
+  list-style: none;
+}
+ 
+section {
+  padding: 0 56px;
+}
+ 
+h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+ 
+/* ========== NAVBAR ========== */
+nav {
+  padding: 32px 0 16px;
+}
+ 
+nav center {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+ 
+nav a {
+  font-size: 1.35rem;
+  font-weight: 400;
+  transition: opacity 0.2s;
+}
+ 
+nav a:hover {
+  opacity: 0.55;
+}
+ 
+hr {
+  border: 0;
+  border-top: 1px solid #e6e6e6;
+  margin: 0;
+}
+ 
+/* ========== ABOUT ========== */
+.about {
+  display: grid;
+  grid-template-columns: 556px 1fr;
+  gap: 48px;
+  align-items: center;
+  padding-top: 140px;
+  padding-bottom: 130px;
+}
+ 
+.about-photo img {
+  width: 100%;
+  aspect-ratio: 556 / 627;
+  object-fit: cover;
+  border-radius: 4px;
+}
+ 
+.about-text h1 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 24px;
+}
+ 
+.about-text p {
+  font-size: 1.3rem;
+  line-height: 1.55;
+  margin-bottom: 26px;
+}
+ 
+/* ========== PROJECT ========== */
+.project {
+  padding-top: 40px;
+  padding-bottom: 140px;
+}
+ 
+.project h2 {
+  margin-bottom: 36px;
+}
+ 
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+ 
+.project-card {
+  border: 1px solid #e3e3e3;
+  border-radius: 18px;
+  padding: 25px;
+  background: #fff;
+}
+ 
+.project-card img {
+  width: 100%;
+  aspect-ratio: 588 / 365;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 22px;
+}
+ 
+.project-card h3 {
+  font-size: 1.45rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+ 
+.project-card p {
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+ 
+/* ========== SKILLS ========== */
+.skill {
+  padding-top: 40px;
+  padding-bottom: 150px;
+}
+ 
+.skill h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+ 
+.skill-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+ 
+.skill-item img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  margin-bottom: 18px;
+}
+ 
+.skill-item h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+ 
+.skill-item p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-width: 220px;
+}
+ 
+/* ========== EXPERIENCE ========== */
+.experience {
+  padding-bottom: 150px;
+}
+ 
+.experience h2 {
+  margin-bottom: 8px;
+}
+ 
+.experience-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+ 
+.experience-item:last-child {
+  border-bottom: 0;
+}
+ 
+.experience-item h3 {
+  font-size: 1.35rem;
+  font-weight: 400;
+}
+ 
+.experience-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+ 
+.experience-meta .org {
+  font-size: 0.95rem;
+}
+ 
+.experience-meta .date {
+  font-size: 0.75rem;
+  color: #666;
+}
+ 
+/* ========== CONTACT ========== */
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  padding-bottom: 120px;
+}
+ 
+.contact-text h2 {
+  font-size: 2.2rem;
+  max-width: 520px;
+}
+ 
+.contact-text p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 8px;
+}
+ 
+.contact-form {
+  background: #000;
+  color: #fff;
+  border-radius: 16px;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+}
+ 
+.contact-form label {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 10px 0 8px;
+}
+ 
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 0;
+  border-radius: 6px;
+  padding: 12px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  background: #fff;
+  color: #111;
+}
+ 
+.contact-form textarea {
+  resize: none;
+  height: 130px;
+}
+ 
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #9a9a9a;
+}
+ 
+.contact-form button {
+  align-self: flex-end;
+  margin-top: 22px;
+  padding: 10px 28px;
+  border: 0;
+  border-radius: 8px;
+  background: #c4c4c4;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1.15rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+ 
+.contact-form button:hover {
+  background: #8f8f8f;
+}
+ 
+/* ========== FOOTER ========== */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 50px 80px 50px;
+  border-top: 1px solid #e6e6e6;
+}
+ 
+.footer-connect h2 {
+  font-size: 1.9rem;
+  margin-bottom: 14px;
+}
+ 
+.footer-connect li {
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+ 
+.footer-connect a:hover {
+  text-decoration: underline;
+}
+ 
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  padding-right: 40px;
+}
+ 
+.footer-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+ 
+.footer-location {
+  font-size: 0.85rem;
+  color: #999;
+}
+ 
+.footer-copy {
+  margin-top: auto;
+  padding-top: 50px;
+  font-size: 0.8rem;
+  color: #444;
+}
+ 
+/* ========== RESPONSIVE ========== */
+@media (max-width: 1024px) {
+  .skill-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .about {
+    grid-template-columns: 1fr 1.3fr;
+  }
+}
+ 
+@media (max-width: 768px) {
+  section {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+ 
+  nav center {
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+ 
+  nav a {
+    font-size: 1.05rem;
+  }
+ 
+  .about,
+  .contact,
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+ 
+  .about {
+    padding-top: 60px;
+    padding-bottom: 70px;
+    gap: 32px;
+  }
+ 
+  .about-text h1 {
+    font-size: 2.5rem;
+  }
+ 
+  .about-text p {
+    font-size: 1.05rem;
+  }
+ 
+  .project,
+  .skill,
+  .experience {
+    padding-bottom: 80px;
+  }
+ 
+  .skill-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+ 
+  .experience-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+ 
+  .experience-meta {
+    align-items: flex-start;
+    text-align: left;
+  }
+ 
+  .contact {
+    gap: 40px;
+  }
+ 
+  .footer {
+    flex-direction: column;
+    padding: 40px 24px;
+  }
+}

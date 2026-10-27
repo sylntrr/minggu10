@@ -1,0 +1,86 @@
+h2 {color: blueviolet;}
+h1 {color: rgb(0, 0, 0);}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+
+/* ini adalah mengunci navbar, agar tetap stay ketika di gulung atau di scrol */
+nav {
+    display: flex;
+    /* membuat menu berada di tengah */
+    justify-content: center;        
+    align-items: center;
+    /* gap jarak antar kotak */
+    gap: 12px;
+    padding: 15px;
+    /* mengatur warna latar belakang navigasi */
+    background-color: beige;
+    /* di wrap agar layar di hp kecil otomatis dan rapi */
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+/* efek saat kursor di arahkan */
+nav a:hover {
+    /* latar berubah jadi beige */
+    background-color: beige;
+    /* warna teks pas di klik berbah warna */
+    color: rgb(220, 20, 94);
+    /* kotak sedikit terangkat */
+    transform: translateY(-9px);
+    /* bayangan kotak */
+    box-shadow: 0 4px 8px rgba (0, 0, 0, 0,1);
+}
+
+
+
+ERORRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+/* mengatur gambar sertifikat */
+.kartu-sertifikat {
+    background-color: darkkhaki;
+    border: 1px solid #cccccc;
+    /* mengatur agar gambarnya sejajar */
+    float: left;
+    margin: 10px;
+    position: relative;
+
+}
+
+.kotak-gambar {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.kotak-gambar img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* pembersih float */
+.clear {
+    clear: both;
+}
+
+.sertifikat img:hover {
+    transform: translateY( -20px);
+}
+
+/* saat di klik */
+.kotak-gambar input:checked + label img {
+    position: fixed;
+    width: auto;
+    max-width: 90%;
+    max-height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    z-index: 999;
+    /* object-fit: contain; */
+}
